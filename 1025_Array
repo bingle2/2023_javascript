@@ -35,3 +35,30 @@ console.log(fruits);
 
 fruits.pop();
 console.log(fruits);
+
+fruits.push('딸기', '복숭아', '레몬');
+console.log(fruits);
+fruits.splice(1, 1);
+console.log(fruits);
+fruits.splice(1, 1, '사과', '수박');
+console.log(fruits);
+
+const fruits2 = ['파파야', '코코넛'];
+const newFruits = fruits.concat(fruits2);
+console.log(newFruits);
+
+//5. Searching
+console.clear();
+console.log(fruits);
+console.log(fruits.indexOf('사과'));
+console.log(fruits.indexOf('수박'));
+console.log(fruits.indexOf('코코넛'));
+
+console.log(fruits.includes('수박'));
+console.log(fruits.includes('코코넛'));
+
+console.clear();
+fruits.push('사과');
+console.log(fruits);
+console.log(fruits.indexOf('사과'));
+console.log(fruits.lastIndexOf('사과'));
